@@ -1,0 +1,167 @@
+2005-02-20 23:27  dse
+
+	* msg.c: -p works now
+
+2005-02-20 23:26  dse
+
+	* vtclock.c: fix help description
+
+2004-12-03 16:29  dse
+
+	* COPYING: [no log message]
+
+2004-05-25 12:20  dse
+
+	* msg.c, msg.h, vtclock.c: pipe support in progress; -D option
+
+2004-05-20 21:57  dse
+
+	* Makefile, msg.c, msg.h, vtclock.c: messages can now come from
+	  files.  fixed 5-second delay between each line.
+
+2004-05-19 15:44  dse
+
+	* vtclock.c: add preliminary one line message window support.
+
+2004-03-26 01:07  dse
+
+	* vtclock.c: Add -c and -C options.  If -c <char> is specified, all
+	  non-space characters in the specified font are replaced with the
+	  specified character.	-C turns this option off.
+
+2004-03-26 01:00  dse
+
+	* vtclock.c: minor cleanup.
+
+2004-03-26 00:59  dse
+
+	* README: remove a TODO item that has since been done.
+
+2004-02-28 01:38  dse
+
+	* vtclock.c: fixes
+
+2004-02-28 01:35  dse
+
+	* vtclock.c: add ^L/^R refresh key
+
+2004-02-19 19:50  dse
+
+	* vtclock.c: 1.  Add a -5 option for a new font.
+
+	  2.  Turns out the display corruption would only happen if
+	  colon-blinking and/or inverse-video was turned on, AND the
+	  window's upper left-hand corner was moved to (0, 0).	So we never
+	      bounce to (0, 0).
+
+2004-02-19 18:38  dse
+
+	* vtclock.c: cosmetic changes
+
+2004-02-15 21:59  dse
+
+	* README: additions
+
+2004-02-15 21:21  dse
+
+	* README, vtclock.c: We have blinking colons now
+
+2004-02-15 21:20  dse
+
+	* Makefile: fix install
+
+2004-02-15 20:11  dse
+
+	* Makefile: use prefix variable for make-install; use vtclock as
+	  executable name
+
+2004-02-15 20:10  dse
+
+	* Makefile: add font3.h as a dependency
+
+2004-02-15 20:10  dse
+
+	* vtclock.c: add -4 to use the new font
+
+2004-02-15 20:10  dse
+
+	* font3.h: minor change
+
+2004-02-15 20:03  dse
+
+	* font3.h: that's more like it
+
+2004-02-15 19:59  dse
+
+	* font3.h: Copied from digitalfont0.h
+
+2004-02-15 19:59  dse
+
+	* README: Attrition of long-done items
+
+2004-02-15 19:58  dse
+
+	* vtclock.c: Turn VTCLOCK_INVERSE into a runtime cmdline option,
+	  -v.
+
+2003-05-24 11:23  dse
+
+	* vtclock.c: options to select a font
+
+2003-05-24 11:20  dse
+
+	* vtclock.c: options to turn on/off bouncing, and set delay
+
+2002-11-04 20:10  dse
+
+	* Makefile, digitalfont0.h, vtclock.c: add crappy digital font; try
+	  different refresh; tar make target
+
+2002-10-30 22:57  dse
+
+	* Makefile, digits.h, font.h, font0.h, font1.h, font2.h, vtclock.c:
+	  massive patch: add small, big fonts; can use more than one font
+	  on screen
+
+2002-10-28 07:48  dse
+
+	* vtclock.c: change default bounce back to 30
+
+2002-10-28 07:47  dse
+
+	* vtclock.c: rename VTCLOCK_DELAY as VTCLOCK_BOUNCE; add some
+	  experimental code to use A_REVERSE to display digits, which is
+	  buggy.
+
+2002-10-21 21:13  dse
+
+	* vtclock.c: bounce patch
+
+2002-10-21 21:13  dse
+
+	* digits.h: minor fix
+
+2002-02-25 20:58  dse
+
+	* digits.h: center colon
+
+2002-02-25 20:58  dse
+
+	* Makefile: add install
+
+2002-02-25 20:52  dse
+
+	* Makefile: [no log message]
+
+2002-02-25 20:51  dse
+
+	* digits.h, vtclock.c: fix macros; use new font
+
+2002-02-25 20:33  dse
+
+	* README, digits.h, vtclock.c: Initial revision
+
+2002-02-25 20:33  dse
+
+	* README, digits.h, vtclock.c: [no log message]
+
