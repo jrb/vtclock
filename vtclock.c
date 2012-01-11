@@ -22,6 +22,7 @@
 #include <stdio.h>
 #include <getopt.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "font0.h"
 #include "font1.h"
