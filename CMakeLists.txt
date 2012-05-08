@@ -16,6 +16,7 @@ add_subdirectory(msg)
 add_executable(vtclock vtclock.c)
 target_link_libraries (vtclock msg ${CURSES_LIBRARIES})
 
+#CPack Config
 set(CPACK_SOURCE_PACKAGE_FILE_NAME
     "${CMAKE_PROJECT_NAME}-${CPACK_PACKAGE_VERSION_MAJOR}.${CPACK_PACKAGE_VERSION_MINOR}.${CPACK_PACKAGE_VERSION_PATCH}")
 
@@ -24,3 +25,5 @@ set(CPACK_SOURCE_IGNORE_FILES
 set(CPACK_SOURCE_GENERATOR "TGZ")
 include(CPack)
 
+#Because I like make dist better than make package_source
+add_custom_target(dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
