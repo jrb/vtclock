@@ -1,9 +1,14 @@
 project(vtclock)
 cmake_minimum_required(VERSION 2.8)
 
-set(CPACK_PACKAGE_VERSION_MAJOR "0")
-set(CPACK_PACKAGE_VERSION_MINOR "0")
-set(CPACK_PACKAGE_VERSION_PATCH "20120508")
+set(vtclock_VERSION_MAJOR "0")
+set(vtclock_VERSION_MINOR "0")
+set(vtclock_VERSION_PATCH "20120508")
+
+
+set(CPACK_PACKAGE_VERSION_MAJOR ${vtclock_VERSION_MAJOR})
+set(CPACK_PACKAGE_VERSION_MINOR ${vtclock_VERSION_MINOR})
+set(CPACK_PACKAGE_VERSION_PATCH ${vtclock_VERSION_PATCH})
 
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIRS})
