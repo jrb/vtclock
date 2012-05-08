@@ -31,6 +31,8 @@
 #include "digitalfont0.h"
 #include "msg.h"
 
+#include "vtclock_config.h"
+
 void pollkey(void);
 
 #define AT_LEAST(a, b) do { if (a < b) a = b; } while(0)
@@ -217,6 +219,15 @@ usage() {
 	  "  -p         shows one line at a time from output of command\n"
 	  "  -D <secs>  # seconds between each message line (default 5)\n"
           );
+}
+
+void
+version() {
+  fprintf(stdout,
+          "vtclock %d.%d.%d\n",
+          vtclock_VERSION_MAJOR,
+          vtclock_VERSION_MINOR,
+          vtclock_VERSION_PATCH);
 }
 
 int

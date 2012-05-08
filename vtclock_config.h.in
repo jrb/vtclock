@@ -1,0 +1,4 @@
+// Configured Options
+#define vtclock_VERSION_MAJOR @vtclock_VERSION_MAJOR@
+#define vtclock_VERSION_MINOR @vtclock_VERSION_MINOR@
+#define vtclock_VERSION_PATCH @vtclock_VERSION_PATCH@

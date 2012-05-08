@@ -8,6 +8,12 @@ set(CPACK_PACKAGE_VERSION_PATCH "20120508")
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIRS})
 
+configure_file(
+  "${PROJECT_SOURCE_DIR}/vtclock_config.h.in"
+  "${PROJECT_BINARY_DIR}/vtclock_config.h"
+)
+
+
 include_directories("${PROJECT_BINARY_DIR}")
 include_directories ("${PROJECT_SOURCE_DIR}/fonts")
 include_directories ("${PROJECT_SOURCE_DIR}/msg")
